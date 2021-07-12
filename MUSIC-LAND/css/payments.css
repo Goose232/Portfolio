@@ -1,0 +1,28 @@
+.intro {
+    display: flex;
+    align-items: center;
+    height: 740px;
+
+}
+
+.intro__inner{
+    width: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+    margin-top: 16px;
+}
+
+.mt_p_55{
+    margin-top: 55px;
+}

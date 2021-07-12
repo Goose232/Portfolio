@@ -1,0 +1,1189 @@
+<!DOCTYPE html >
+<html lang="en"> 
+  <head> 
+    <title>LeoSpa</title>
+    <style>
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400;500&family=Rufina:wght@400;700&display=swap");
+*p {
+  margin: 0;
+  padding: 0;
+}
+
+*h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+}
+
+.header {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.nav {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 10%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #263a41;
+}
+
+.nav--footer {
+  margin-left: -80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-item--footer {
+  padding-left: 60px;
+}
+
+.nav-item__link {
+  list-style-type: none;
+}
+
+.nav-item__link:hover {
+  color: #ff817e;
+}
+
+.caplya {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainScreen {
+  margin-top: 200px;
+  max-width: 600px;
+}
+
+.mainScreen__pretitle {
+  margin-top: 190px;
+  font-family: "Rufina", serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ff817e;
+}
+
+.mainScreen__title {
+  margin-top: 20px;
+  font-size: 60px;
+  font-family: "Rufina", serif;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #263a41;
+}
+
+.mainScreen__desc {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #555555;
+}
+
+.mainScreen__resBut {
+  margin-top: 50px;
+  font-weight: 400;
+  color: white;
+  background-color: #ff817e;
+  border: 0;
+  padding: 20px 35px;
+}
+
+.mainScreen__resBut:hover {
+  background-color: #f07674;
+  cursor: pointer;
+}
+
+.mainScreen__resBut::after {
+  width: 18px;
+  height: 18px;
+  content: '';
+  background: url(images/elem/arrow.png) no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.mainScreen__video {
+  font-size: 15px;
+  color: #555555;
+}
+
+.mainScreen__layer1 {
+  margin-left: 60px;
+  position: relative;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background: url(images/backVid.svg) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.mainScreen__layer1:hover {
+  cursor: pointer;
+}
+
+.mainScreen__layer2 {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background: url(images/elem/vid.svg) no-repeat;
+  display: inline-block;
+  bottom: 0;
+}
+
+.mainScreen__layer2:hover {
+  fill: black;
+  cursor: pointer;
+}
+
+.bigFlowers {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 150px;
+}
+
+.redFlower {
+  margin-top: 233px;
+  position: relative;
+  left: -70px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__aboutSpa {
+  margin-top: 30px;
+  color: #888888;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.about__title {
+  margin-top: 0;
+  font-family: "Rufina", serif;
+  color: #263a41;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about__desc {
+  max-width: 970px;
+  color: #888888;
+  text-align: center;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.about__btn {
+  margin-top: 50px;
+  font-weight: 400;
+  color: white;
+  background-color: #ff817e;
+  border: 0;
+  border-radius: 30px;
+  padding: 20px 45px;
+  margin-bottom: 75px;
+}
+
+.about__btn:hover {
+  background-color: #f07674;
+  cursor: pointer;
+}
+
+.purpFlowers {
+  position: relative;
+  left: 100%;
+  z-index: 2;
+  bottom: 380px;
+}
+
+.footage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -10px;
+  max-width: 100%;
+  position: relative;
+}
+
+.footage__item {
+  width: 24.7%;
+  height: 565px;
+  background: #dddddd;
+  position: relative;
+  margin-top: 10px;
+  margin-right: -10.4px;
+  -webkit-transition: background-color linear .2s;
+  transition: background-color linear .2s;
+}
+
+.footage__item:hover {
+  background-color: #ff817e;
+  cursor: pointer;
+}
+
+.footage__content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.footage__content:hover {
+  opacity: 1;
+}
+
+.footage__image {
+  width: 50px;
+  height: 50px;
+  background: url(images/elem/about.svg) no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.footage__text {
+  color: white;
+  font-family: "Rufina", serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+.procTitles {
+  margin-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.procTitles__title {
+  margin-top: 0;
+  font-family: "Rufina", serif;
+  color: #1e2528;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.procTitles__desc {
+  margin: 0;
+  max-width: 700px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #888888;
+  margin-bottom: 0;
+  line-height: 27px;
+}
+
+.procedures {
+  margin-top: 90px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.procedures__item {
+  width: 32%;
+  height: 590px;
+  border: 1px solid;
+  border-color: #e3e6ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-box-shadow .2s linear;
+  transition: -webkit-box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+}
+
+.procedures__item--height {
+  height: 610px;
+}
+
+.procedures__item:hover {
+  border-color: white;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -30px 0 20px -30px rgba(0, 0, 0, 0.13), 30px 0 20px -30px rgba(0, 0, 0, 0.13), 0 0 20px rgba(0, 0, 0, 0.048) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -30px 0 20px -30px rgba(0, 0, 0, 0.13), 30px 0 20px -30px rgba(0, 0, 0, 0.13), 0 0 20px rgba(0, 0, 0, 0.048) inset;
+}
+
+.procedures__photo {
+  margin-top: 20px;
+}
+
+.procedures__title {
+  margin-top: 30px;
+  color: #263a41;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.procedures__title--marg {
+  margin-top: 10px;
+}
+
+.procedures__text {
+  margin-top: 30px;
+  font-weight: 300;
+  color: #888888;
+  margin-bottom: 45px;
+  font-size: 14px;
+  max-width: 80%;
+  line-height: 27px;
+}
+
+.procedures__text--marg {
+  margin-top: 15px;
+}
+
+.procedures__btn {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background-color: #30383b;
+  border: 0;
+  border-radius: 50px;
+  padding: 15px 35px;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.procedures__btn:hover {
+  background-color: #ff817e;
+  cursor: pointer;
+}
+
+.procedures__pretext {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #888888;
+}
+
+.feedback {
+  width: 100%;
+  height: 710px;
+  background-color: #fff9f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback__image {
+  margin-top: 135px;
+  height: 55px;
+  width: 65px;
+}
+
+.feedback__text {
+  max-width: 945px;
+  margin-top: 45px;
+  line-height: 35px;
+  font-family: "Rufina", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #263a41;
+}
+
+.feedback__ava {
+  margin-top: 45px;
+}
+
+.feedback__name {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 45px;
+}
+
+.feedback__name::after {
+  font-family: 'Roboto', sans-serif;
+  content: ' Executive';
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.feedback__listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -10px;
+}
+
+.feedback__pagination {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #ffc3c2;
+  margin-left: 10px;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.feedback__pagination:hover {
+  background-color: #ff817e;
+  cursor: pointer;
+  width: 11px;
+  height: 11px;
+}
+
+.teamTitles {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teamTitles__title {
+  font-family: "Rufina", serif;
+  font-size: 42px;
+  margin: 0;
+  color: #263a41;
+}
+
+.teamTitles__text {
+  margin-top: 30px;
+  margin-bottom: 0;
+  max-width: 660px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #888888;
+}
+
+.team {
+  margin-top: 90px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 300px;
+}
+
+.team__item {
+  width: 30%;
+  height: 435px;
+  background-color: #f1f1f1;
+}
+
+.team__block {
+  position: relative;
+  top: 90%;
+  left: 10%;
+  width: 80%;
+  height: 110px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-box-shadow .2s linear;
+  transition: -webkit-box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+}
+
+.team__block:hover {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -30px 0 20px -30px rgba(0, 0, 0, 0.13), 30px 0 20px -30px rgba(0, 0, 0, 0.13), 0 0 20px rgba(0, 0, 0, 0.048) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -30px 0 20px -30px rgba(0, 0, 0, 0.13), 30px 0 20px -30px rgba(0, 0, 0, 0.13), 0 0 20px rgba(0, 0, 0, 0.048) inset;
+  top: 80%;
+  height: 170px;
+}
+
+.team__block:hover .team__socials {
+  display: block;
+}
+
+.team__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+  display: none;
+}
+
+.team__socials__facebook {
+  width: 30px;
+  height: 30px;
+  background: url(images/elem/facebook.svg) no-repeat center center;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+.team__socials__facebook:hover {
+  background-color: #ff817e;
+  fill: white !important;
+  cursor: pointer;
+}
+
+.team__socials__twitter {
+  width: 30px;
+  height: 30px;
+  background: url(images/elem/twitter.svg) no-repeat center center;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+.team__socials__twitter:hover {
+  background-color: #ff817e;
+  fill: white;
+  cursor: pointer;
+}
+
+.team__socials__google {
+  width: 30px;
+  height: 30px;
+  background: url(images/elem/google.svg) no-repeat center center;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+.team__socials__google:hover {
+  background-color: #ff817e;
+  fill: white;
+  cursor: pointer;
+}
+
+.team__socials__inst {
+  width: 30px;
+  height: 30px;
+  background: url(images/elem/inst.svg) no-repeat center center;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+.team__socials__inst:hover {
+  background-color: #ff817e;
+  fill: white;
+  cursor: pointer;
+}
+
+.team__name {
+  font-family: "Rufina", serif;
+  font-size: 22px;
+  color: #263a41;
+}
+
+.team__text {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 15px;
+  color: #888888;
+}
+
+.container--appoint {
+  max-width: 750px;
+  margin-top: 90px;
+  margin-left: 80px;
+}
+
+.appointment {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff9f8;
+}
+
+.appointment__left {
+  width: 40%;
+  height: 600px;
+  background-color: #b3afa6;
+}
+
+.appointment__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.appointment__form {
+  max-width: 60%;
+  margin-bottom: 15px;
+}
+
+.appointment__input {
+  margin-top: 40px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  width: 41%;
+  border: 0;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  border-color: #d4d3d3;
+  outline: none;
+}
+
+.appointment__submit {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  background-color: #ff817e;
+  padding: 20px 30px;
+}
+
+.appointment__submit:hover {
+  background-color: #f07674;
+  cursor: pointer;
+}
+
+.appointment__submit--marg {
+  margin: 0;
+  font-size: 13px;
+}
+
+.support {
+  max-width: 945px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+.support__contacts {
+  max-width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.support__item {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support__text {
+  margin-left: 25px;
+  max-width: 180px;
+  font-size: 14px;
+  color: #888888;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.support__text--maxwidth {
+  max-width: 170px;
+}
+
+.support__review {
+  margin-top: 20px;
+  max-width: 555px;
+}
+
+.support__input {
+  width: 555px;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.support__input--comment {
+  resize: none;
+  height: 120px;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+.footer {
+  width: 100%;
+  height: 455px;
+  background-color: #fff9f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__logo {
+  margin-bottom: 50px;
+}
+
+.footer__socials {
+  margin-top: 30px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__socials-img {
+  height: 18px;
+  width: 18px;
+}
+
+.footer__copyright {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.footer__text--red {
+  color: #ff817e;
+}
+
+#face:hover {
+  fill: green !important;
+  cursor: pointer;
+}
+
+#twitter:hover {
+  fill: green !important;
+  cursor: pointer;
+}
+
+#inst:hover {
+  fill: green !important;
+  cursor: pointer;
+}
+
+#vimeo:hover {
+  fill: green !important;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body> 
+    <header>
+      <div class="container">
+        <div class="header"><img src="images/Logo.png" alt=""/>
+          <nav class="nav"> 
+            <ul class="nav-item"><a class="nav-item__link" href="#">Home</a></ul>
+            <ul class="nav-item"><a class="nav-item__link" href="#">About    </a></ul>
+            <ul class="nav-item"><a class="nav-item__link" href="#">Feature</a></ul>
+            <ul class="nav-item"><a class="nav-item__link" href="#">Service</a></ul>
+            <ul class="nav-item"><a class="nav-item__link" href="#">Contact</a></ul>
+          </nav><img class="caplya" src="images/background/caplya.png" alt=""/>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="mainScreen">   
+        <h3 class="mainScreen__pretitle">SPA & BEAUTY CENTER</h3>
+        <h1 class="mainScreen__title">Beauty and success starts here.  </h1>
+        <p class="mainScreen__desc">Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</p>
+        <button class="mainScreen__resBut">RESERVE NOW</button>
+        <div class="mainScreen__layer1">
+          <div class="mainScreen__layer2"></div>
+        </div><a class="mainScreen__video" href="#">Watch our story</a><img class="bigFlowers" src="images/background/bigFlowers.png" alt=""/>
+      </div><img class="redFlower" src="images/background/redFlower.png" alt=""/>
+      <div class="about"> <img class="about__flower" src="images/elem/about.png" alt=""/>
+        <h3 class="about__aboutSpa">ABOUT OUR SPA CENTER </h3>
+        <h2 class="about__title">Come and you will be Inspired!</h2>
+        <p class="about__desc">It’s the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker</p>
+        <button class="about__btn">READ MORE</button>
+      </div><img class="purpFlowers" src="images/background/purpFlower.png" alt=""/>
+    </div>
+    <div class="footage"> 
+      <div class="footage__item">
+        <div class="footage__content">
+          <div class="footage__image"></div>
+          <div class="footage__text">Body Treatment</div>
+        </div>
+      </div>
+      <div class="footage__item">
+        <div class="footage__content">
+          <div class="footage__image"></div>
+          <div class="footage__text">Body Treatment</div>
+        </div>
+      </div>
+      <div class="footage__item">
+        <div class="footage__content">
+          <div class="footage__image"></div>
+          <div class="footage__text">Body Treatment</div>
+        </div>
+      </div>
+      <div class="footage__item">
+        <div class="footage__content">
+          <div class="footage__image"></div>
+          <div class="footage__text">Body Treatment</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="procTitles"> 
+        <h2 class="procTitles__title">Popular Procedures</h2>
+        <p class="procTitles__desc">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+      </div>
+      <div class="procedures"> 
+        <div class="procedures__item"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <h3 class="procedures__title">Massage Therapy</h3>
+          <p class="procedures__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+        <div class="procedures__item"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <h3 class="procedures__title">Beauty Care</h3>
+          <p class="procedures__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+        <div class="procedures__item"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <h3 class="procedures__title">Executive Reflexology</h3>
+          <p class="procedures__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+      </div>
+    </div>
+    <div class="feedback"><img class="feedback__image" src="images/elem/quote.svg" alt=""/>
+      <p class="feedback__text">First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life blessed you meat shall you winged under from their there he That you're one called gather make much red wherein set fourth green bearing fifth replenish given she had.</p><img class="feedback__ava" src="images/elem/Ava.png" alt=""/>
+      <h3 class="feedback__name">Jack Marsh,</h3>
+      <div class="feedback__listing">
+        <div class="feedback__pagination"> </div>
+        <div class="feedback__pagination"></div>
+        <div class="feedback__pagination"></div>
+        <div class="feedback__pagination"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="teamTitles"> 
+        <h2 class="teamTitles__title">Experienced Team</h2>
+        <p class="teamTitles__text">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin </p>
+      </div>
+      <div class="team">
+        <div class="team__item">
+          <div class="team__block"> 
+            <h2 class="team__name">Joseph Austin</h2>
+            <p class="team__text">Thai Message
+              <div class="team__socials"> 
+                <div class="team__socials__facebook"> </div>
+                <div class="team__socials__twitter"> </div>
+                <div class="team__socials__google"> </div>
+                <div class="team__socials__inst"></div>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__block"> 
+            <h2 class="team__name">David Harran</h2>
+            <p class="team__text">Thai Message
+              <div class="team__socials"> 
+                <div class="team__socials__facebook"> </div>
+                <div class="team__socials__twitter"> </div>
+                <div class="team__socials__google"> </div>
+                <div class="team__socials__inst"></div>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__block"> 
+            <h2 class="team__name">Cheryl Harris</h2>
+            <p class="team__text">Thai Message
+              <div class="team__socials"> 
+                <div class="team__socials__facebook"> </div>
+                <div class="team__socials__twitter"> </div>
+                <div class="team__socials__google"> </div>
+                <div class="team__socials__inst"></div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="appointment"> 
+      <div class="appointment__left"></div>
+      <div class="container--appoint">
+        <div class="appointment__right">
+          <form class="appointment__form" action=""></form>
+          <p>
+            <input class="appointment__input" type="name" name="name" value="" placeholder="NAME"/>
+            <input class="appointment__input" type="email" name="year" value="" placeholder="EMAIL ADDRESS"/>
+            <select class="appointment__input">
+              <option value="" disabled="disabled" selected="selected" hidden="hidden">SELECT SERVICE</option>
+              <option value="1">SERVICE 1</option>
+              <option value="2">SERVICE 2</option>
+              <option value="3">SERVICE 3</option>
+            </select>
+            <input class="appointment__input" type="phone" name="title" value="" placeholder="PHONE NUMBER"/>
+            <input class="appointment__input" type="text" name="title" value="" placeholder="DATE" onfocus="(this.type='date')"/>
+            <input class="appointment__input" type="text" name="title" value="" placeholder="TIME" onfocus="(this.type='time')"/>
+            <input class="appointment__submit" type="submit" value="Make an Appointment"/>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="procTitles"> 
+        <h2 class="procTitles__title">Latest From Blog</h2>
+        <p class="procTitles__desc">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+      </div>
+      <div class="procedures"> 
+        <div class="procedures__item procedures__item--height"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <p class="procedures__pretext">RELAXATION  |  JULY 03, 2019 </p>
+          <h3 class="procedures__title procedures__title--marg">Had seed herb grass mids</h3>
+          <p class="procedures__text procedures__text--marg">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+        <div class="procedures__item procedures__item--height"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <p class="procedures__pretext">RELAXATION  |  JULY 03, 2019 </p>
+          <h3 class="procedures__title procedures__title--marg">Divid image unto creeping</h3>
+          <p class="procedures__text procedures__text--marg">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+        <div class="procedures__item procedures__item--height"> <img class="procedures__photo" src="images/elem/photos.png" alt=""/>
+          <p class="procedures__pretext">RELAXATION  |  JULY 03, 2019 </p>
+          <h3 class="procedures__title procedures__title--marg">Had seed herb grass mids </h3>
+          <p class="procedures__text procedures__text--marg">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+          <button class="procedures__btn">READ MORE </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="procTitles"> 
+        <h2 class="procTitles__title">Get In Touch</h2>
+        <p class="procTitles__desc">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+      </div>
+      <div class="support">   
+        <div class="support__contacts"> 
+          <div class="support__item"> <img src="images/elem/cont1.png" alt="" height="50px" width="50px"/>
+            <p class="support__text">848 E 28th ST, BROOKLYN NEW YORK, USa</p>
+          </div>
+          <div class="support__item"> <img src="images/elem/cont2.png" alt="" height="50px" width="50px"/>
+            <p class="support__text">example@leospa.com example@leospa.com</p>
+          </div>
+          <div class="support__item"> <img src="images/elem/cont3.png" alt="" height="50px" width="50px"/>
+            <p class="support__text support__text--maxwidth">+02 365 2365 3265 (02)  +01 365 2365 3265 (04)</p>
+          </div>
+        </div>
+        <div class="support__review">
+          <form class="support__form" action="">
+            <input class="support__input" type="name" name="name" value="" placeholder="FIRST NAME"/>
+            <input class="support__input" type="email" name="year" value="" placeholder="EMAIL ADDRESS"/>
+            <textarea class="support__input support__input--comment" name="1" cols="30" rows="10" placeholder="WRITE COMMENT"></textarea>
+            <input class="appointment__submit appointment__submit--marg" type="submit" value="SUBMIT NOW"/>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"> <img class="footer__logo" src="images/Logo.png" alt=""/>
+      <nav class="nav nav--footer"> 
+        <ul class="nav-item nav-item--footer"><a class="nav-item__link" href="#">Home</a></ul>
+        <ul class="nav-item nav-item--footer"><a class="nav-item__link" href="#">About    </a></ul>
+        <ul class="nav-item nav-item--footer"><a class="nav-item__link" href="#">Feature</a></ul>
+        <ul class="nav-item nav-item--footer"><a class="nav-item__link" href="#">Service</a></ul>
+        <ul class="nav-item nav-item--footer"><a class="nav-item__link" href="#">Contact</a></ul>
+      </nav>
+      <div class="footer__socials">
+        <object class="footer__socials-img" data="images/elem/facebook.svg" type="image/svg+xml"></object>
+        <p>|</p>
+        <object class="footer__socials-img" data="images/elem/twitter.svg" type="image/svg+xml"></object>
+        <p>|</p>
+        <object class="footer__socials-img" data="images/elem/inst.svg" type="image/svg+xml"> </object>
+        <p>|</p>
+        <object class="footer__socials-img" data="images/elem/vimeo.svg" type="image/svg+xml"></object>
+      </div>
+      <div class="footer__copyright"> 
+        <p class="footer__text">
+          © COPYRIGHT 2019<span class="footer__text footer__text--red"> themeies.com. </span>ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
+  </body>
+</html>
